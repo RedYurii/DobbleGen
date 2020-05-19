@@ -101,14 +101,10 @@ class ui():
         self.app.button("Export", self.app.stop, 7, 0, 3)#, stretch='column', sticky='nsw')
 
 
-    def update_entry(self, text):
-        print(f"inside update_entry {text}")
-
-
     def run(self):
-        print("UX run.... OK")
         self.app.go()
  
+
     def draw_canvas(self): 
         self.app.clearCanvas(self.canvas_title)
         circle_x = int((self.window_width )/2 - CIRCLE_R/2) #
